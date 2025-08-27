@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\JHughes_UnitConverter.RazorPages.props" />
+</Project>
