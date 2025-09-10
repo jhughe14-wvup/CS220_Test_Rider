@@ -1,17 +1,14 @@
-﻿@page
+﻿@page "/Demo/{winner?}"
 @model WebApplication1.Pages.DemoModel
 @{
     ViewData["Title"] = "Hello World Demo";
     
-    var animals = new List<string> { "cat", "dog", "cow", "cheetah", "chicken"};
 
-    var random = new Random();
-    int index = random.Next(animals.Count);
-    string selectedAnimal = animals[index];
 }
 
 <h1>Welcome to the @ViewData["Title"]!!!</h1>
 
 <p>Here you can add HTML tags to display your static information</p>
 
-<p>The animal of the day is the <strong>@selectedAnimal</strong>!!!</p>
+<p>The animal of the day is the <strong>@Model.selectedAnimal</strong>!!!</p>
+
